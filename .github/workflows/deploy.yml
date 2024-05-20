@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'foodie_payment/**'
 
 jobs:
   # sonarcloud:
@@ -43,7 +41,7 @@ jobs:
         id: build-image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: foodie_payment
+          ECR_REPOSITORY: foodie_order
         run: |
           # Generate timestamp-based tag
           TIMESTAMP=$(date +'%Y%m%d%H%M%S')
