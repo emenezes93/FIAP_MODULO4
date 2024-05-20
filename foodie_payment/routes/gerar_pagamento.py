@@ -3,7 +3,7 @@ import mercadopago
 from config.database import conn, verifica_cliente, insere_pedido, busca_cliente
 from flask_restful import Resource, reqparse
 # Configurações do Mercado Pago
-MERCADO_PAGO_ACCESS_TOKEN = 'TEST-7579327657340780-121907-f489e3c6b1fe98d0cf7207fab993cf6a-259096454'
+MERCADO_PAGO_ACCESS_TOKEN = 'TEST-2735014851578600-051921-14c6f9943cc76b45acf212aaf029ac29-1599236271'
 
 class Pagamento(Resource):
     def post(self):
